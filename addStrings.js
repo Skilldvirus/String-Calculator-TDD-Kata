@@ -9,7 +9,7 @@ function add(stringNumbers){
       delimiter = stringNumbers.substring(delimiterIndex, delimiterIndex + 1);
       numbersWithoutDelimiter = stringNumbers.substring(stringNumbers.indexOf("n") + 1);
 
-let nuArray = numbersWithoutDelimiter.split(delimiter);
+let nuArray = numbersWithoutDelimiter.split(delimiter).map(n => parseInt(n, 10));
 if(nuArray.some(n => Number.isNaN(n))) console.log("0");
   if(nuArray.some(n => n < 0)) console.log('Negatives not allowed');
   return nuArray.reduce((s, n) => s + n)
