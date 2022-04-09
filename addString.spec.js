@@ -1,10 +1,10 @@
 // StringCalculator-spec.js
-describe("String Calculator",  function(){
+describe("Add",  function(){
     var calculator;
 
 
     beforeEach(function() {
-      calculator = new StringCalculator();
+      calculator = new add();
     });
 
     it("should return zero when '' is passed", function(){
